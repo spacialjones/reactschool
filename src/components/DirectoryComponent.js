@@ -15,11 +15,9 @@ function RenderDirectoryItem({campsite}) {
                 </CardImgOverlay>
             </Link>
         </Card>
-    );
-}
-
+    );}
+    
 function Directory(props) {
-
     const directory = props.campsites.campsites.map(campsite => {
         return (
             <div key={campsite.id} className="col-md-5 m-1">
@@ -27,7 +25,6 @@ function Directory(props) {
             </div>
         );
     });
-
     if (props.campsites.isLoading) {
         return (
             <div className="container">
@@ -67,5 +64,4 @@ function Directory(props) {
             </div>
         );
 }
-
 export default Directory;
